@@ -30,3 +30,89 @@ Runtime Error
 [0m22:48:35.731651 [debug] [MainThread]: Command `dbt init` failed at 22:48:35.731651 after 0.06 seconds
 [0m22:48:35.732651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3C7687AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3C7691E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3C6F51FD0>]}
 [0m22:48:35.732651 [debug] [MainThread]: Flushing usage events
+[0m02:31:35.889352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF17167CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF16E66E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF17167B10>]}
+
+
+============================== 02:31:35.893352 | d44fc631-8fa9-47bb-a5dc-59317abe08a1 ==============================
+[0m02:31:35.893352 [info ] [MainThread]: Running with dbt=1.6.2
+[0m02:31:35.894352 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m02:31:35.895353 [info ] [MainThread]: dbt version: 1.6.2
+[0m02:31:35.895353 [info ] [MainThread]: python version: 3.11.2
+[0m02:31:35.896353 [info ] [MainThread]: python path: C:\Users\Haroon\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:31:35.896353 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m02:31:35.901352 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m02:31:35.902352 [debug] [MainThread]: Command `dbt debug` failed at 02:31:35.902352 after 0.02 seconds
+[0m02:31:35.902352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF17454850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF17889950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DF17883C50>]}
+[0m02:31:35.903353 [debug] [MainThread]: Flushing usage events
+[0m02:33:25.140144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D274A3B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2746B710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D274B9850>]}
+
+
+============================== 02:33:25.144144 | 53d49ad5-2159-4ca5-b7c1-0b9dc5294c32 ==============================
+[0m02:33:25.144144 [info ] [MainThread]: Running with dbt=1.6.2
+[0m02:33:25.144144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m02:33:25.145145 [info ] [MainThread]: dbt version: 1.6.2
+[0m02:33:25.146144 [info ] [MainThread]: python version: 3.11.2
+[0m02:33:25.146144 [info ] [MainThread]: python path: C:\Users\Haroon\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:33:25.147144 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m02:33:25.152144 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m02:33:25.153144 [debug] [MainThread]: Command `dbt debug` failed at 02:33:25.152144 after 0.03 seconds
+[0m02:33:25.153144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D274A3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D274A3810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D274A3B90>]}
+[0m02:33:25.154144 [debug] [MainThread]: Flushing usage events
+[0m02:36:00.004034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2C729450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2CA0A650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2C3BB890>]}
+
+
+============================== 02:36:00.007035 | 827fc5a0-68d2-454e-a23c-7fc96bd7d39b ==============================
+[0m02:36:00.007035 [info ] [MainThread]: Running with dbt=1.6.2
+[0m02:36:00.008035 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:36:00.009038 [info ] [MainThread]: dbt version: 1.6.2
+[0m02:36:00.010036 [info ] [MainThread]: python version: 3.11.2
+[0m02:36:00.010036 [info ] [MainThread]: python path: C:\Users\Haroon\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:36:00.011035 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m02:36:00.016034 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_USER'
+[0m02:36:00.017035 [debug] [MainThread]: Command `dbt debug` failed at 02:36:00.017035 after 0.02 seconds
+[0m02:36:00.017035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2C40B810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2CB4AE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D2C433050>]}
+[0m02:36:00.018035 [debug] [MainThread]: Flushing usage events
+[0m02:39:33.604600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B39E28B350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B39DC1C0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B39DB75D10>]}
+
+
+============================== 02:39:33.608629 | 7986c6bf-a818-45d4-9f67-581e88d7c2d5 ==============================
+[0m02:39:33.608629 [info ] [MainThread]: Running with dbt=1.6.2
+[0m02:39:33.608629 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Haroon\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m02:39:33.609600 [info ] [MainThread]: dbt version: 1.6.2
+[0m02:39:33.610629 [info ] [MainThread]: python version: 3.11.2
+[0m02:39:33.610629 [info ] [MainThread]: python path: C:\Users\Haroon\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:39:33.611629 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m02:39:33.616630 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m02:39:33.617629 [info ] [MainThread]: Using profiles dir at C:\Users\Haroon\.dbt
+[0m02:39:33.617629 [info ] [MainThread]: Using profiles.yml file at C:\Users\Haroon\.dbt\profiles.yml
+[0m02:39:33.618629 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Haroon\Documents\Projects\Finstream_Project\dbt_project.yml
+[0m02:39:33.618629 [info ] [MainThread]: Configuration:
+[0m02:39:33.619629 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m02:39:33.619629 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:39:33.620638 [info ] [MainThread]: Required dependencies:
+[0m02:39:33.620638 [debug] [MainThread]: Executing "git --help"
+[0m02:39:33.644600 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:39:33.644600 [debug] [MainThread]: STDERR: "b''"
+[0m02:39:33.645599 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:39:33.645599 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m02:39:33.646600 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:39:33.646600 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_finstream", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m02:39:33.647600 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Haroon\Documents\Projects\Finstream_Project\dbt_project.yml> not found
+
+[0m02:39:33.647600 [debug] [MainThread]: Command `dbt debug` failed at 02:39:33.647600 after 0.06 seconds
+[0m02:39:33.648599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B397290110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B397292E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B39DED8650>]}
+[0m02:39:33.648599 [debug] [MainThread]: Flushing usage events

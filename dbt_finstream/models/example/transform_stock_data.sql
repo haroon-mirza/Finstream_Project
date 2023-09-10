@@ -1,23 +1,20 @@
--- transform_stock_data.sql
+-- your_dbt_model.sql
 
 WITH base AS (
     SELECT 
-        symbol,
-        timestamp,
-        CAST("1. open" AS FLOAT) AS open_price,
-        CAST("2. high" AS FLOAT) AS high_price,
-        CAST("3. low" AS FLOAT) AS low_price,
-        CAST("4. close" AS FLOAT) AS close_price,
-        CAST("5. volume" AS INT) AS volume
-    FROM raw_stock_data_table  -- Replace with your actual S3 table name
-),
-transformed AS (
-    SELECT 
-        symbol,
-        timestamp,
-        high_price - low_price AS price_range,
-        close_price - open_price AS price_change,
-        volume
-    FROM base
+        current_timestamp() AS ingestion_timestamp,
+        JSON: "1. open"::STRING AS open_price,
+        JSON: "2. high"::STRING AS high_price,
+        JSON: "3. low"::STRING AS low_price,
+        JSON: "4. close"::STRING AS close_price,
+        JSON: "5. volume"::STRING AS volume
+    FROM TRANSFORMEDSTOCKDATA
 )
-SELECT * FROM transformed;
+SELECT 
+    ingestion_timestamp,
+    CAST(open_price AS FLOAT) AS open_price,
+    CAST(high_price AS FLOAT) AS high_price,
+    CAST(low_price AS FLOAT) AS low_price,
+    CAST(close_price AS FLOAT) AS close_price,
+    CAST(volume AS INT) AS volume
+FROM base
